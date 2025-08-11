@@ -1,12 +1,22 @@
-streamlit==1.28.1
-torch==2.0.1
-sentence-transformers==2.2.2
-chromadb==0.4.15
-ctransformers==0.2.27
-transformers==4.35.2
-numpy==1.24.3
-PyPDF2==3.0.1
-python-docx==0.8.11
-pathlib
-accelerate==0.24.1
-huggingface-hub==0.17.3
+# Updated requirements.txt for Streamlit deployment
+# Compatible with Python 3.13.5
+
+streamlit>=1.28.0
+sentence-transformers>=2.2.0
+torch>=2.5.0
+numpy>=1.21.0
+scikit-learn>=1.0.0
+pandas>=1.3.0
+PyPDF2>=3.0.0
+python-docx>=0.8.11
+transformers>=4.21.0
+accelerate>=0.20.0
+datasets>=2.12.0
+evaluate>=0.4.0
+
+# Optional: For better performance
+# torchvision>=0.16.0  # Only if you need computer vision features
+# torchaudio>=2.1.0    # Only if you need audio processing
+
+# Alternative lightweight embedding models (if sentence-transformers is too heavy)
+# huggingface-hub>=0.16.0
